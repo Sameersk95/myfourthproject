@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial,sans-serif;
+            font-size: 16px;
+        }
+        @media (max-width:400px) {
+            body{
+                font-size: 14px;
+            }
+        }
+        .content-back{
+            /* border: 2px solid black; */
+            background-color: #0056b3;
+            margin: 100px auto;
+            max-width: 550px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-main{
+            /* border: 2px solid red; */
+            margin-top: 28px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-main h1{
+            color: #0056b3;
+            margin-top: 9px;
+        }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+}
+.contact-form input, .contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact-form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact-form input,.contact-form button{
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.contact-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="content-back">
+        <div class="content-main">
+            <h1>SIGN UP</h1>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" required />
+  <label for="email">Email</label>
+  <input type="email" name="email"  id="email" placeholder="Enter your Email" required />
+  <label for="pwd">Password</label>
+  <input type="password" name="pwd" id="pwd" placeholder="Enter your Password" required />
+  <button type="submit">Submit</button>
+</form>
+        </div>
+    </div>
+</body>
+</html>
